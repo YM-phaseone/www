@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>HTML & CSS 命令一覧</title>
-  <link rel="stylesheet" href="web_styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web学習まとめページ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>🔤 HTMLの主なタグ一覧</h1>
+    <h1>💻 Web学習まとめ</h1>
+  </header>
+
+  <section>
+    <h2>⚙️ VSCodeのオススメ設定</h2>
+
+    <h3>・Auto Save</h3>
+    <p><code>onFocusChange</code> に設定すると、別ウィンドウに切り替えた時に自動保存されます。</p>
+    <ul>
+      <li>左下の歯車アイコン（<strong>管理</strong>）をクリック</li>
+      <li><strong>設定</strong> → Auto Save を検索</li>
+      <li><strong>onFocusChange</strong> を選択</li>
+    </ul>
+
+    <h3>・Live Preview 拡張機能</h3>
+    <p>ブラウザを開かなくても、VSCode内でWebページをリアルタイム確認できます。</p>
+    <ul>
+      <li>拡張機能タブで「Live Preview」を検索</li>
+      <li>インストール後、HTMLファイルを右クリック → <strong>プレビューの表示</strong></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🔤 HTMLの主なタグ一覧</h2>
     <table>
       <thead>
         <tr><th>タグ</th><th>意味</th><th>用途の例</th></tr>
       </thead>
       <tbody>
-        <tr><td>&lt;h1&gt;〜&lt;h6&gt;</td><td>見出し</td><td>ページのタイトルやセクションの見出し</td></tr>
-        <tr><td>&lt;p&gt;</td><td>段落</td><td>通常の文章</td></tr>
-        <tr><td>&lt;a href=""&gt;</td><td>リンク</td><td>他のページ・外部サイトへ</td></tr>
+        <tr><td>&lt;h1&gt;〜&lt;h6&gt;</td><td>見出し</td><td>セクションのタイトル</td></tr>
+        <tr><td>&lt;p&gt;</td><td>段落</td><td>文章を囲む</td></tr>
+        <tr><td>&lt;a href=""&gt;</td><td>リンク</td><td>他のページへ遷移</td></tr>
         <tr><td>&lt;img src=""&gt;</td><td>画像</td><td>画像を表示</td></tr>
         <tr><td>&lt;ul&gt;/&lt;ol&gt;/&lt;li&gt;</td><td>リスト</td><td>箇条書きや番号付き</td></tr>
-        <tr><td>&lt;div&gt;/&lt;span&gt;</td><td>汎用コンテナ</td><td>スタイル適用やグループ化</td></tr>
-        <tr><td>&lt;table&gt;/&lt;tr&gt;/&lt;td&gt;</td><td>表</td><td>データを表形式で</td></tr>
-        <tr><td>&lt;form&gt;/&lt;input&gt;/&lt;textarea&gt;</td><td>フォーム</td><td>ユーザー入力を受け取る</td></tr>
+        <tr><td>&lt;div&gt;/&lt;span&gt;</td><td>汎用要素</td><td>グルーピングや装飾</td></tr>
       </tbody>
     </table>
-  </header>
+  </section>
 
   <section>
-    <h1>🎨 CSSの主要プロパティ</h1>
+    <h2>🎨 CSSの主要プロパティ</h2>
     <table>
       <thead>
         <tr><th>プロパティ</th><th>意味</th><th>例</th></tr>
       </thead>
       <tbody>
         <tr><td>color</td><td>文字色</td><td>color: red;</td></tr>
-        <tr><td>background-color</td><td>背景色</td><td>background-color: #f0f0f0;</td></tr>
-        <tr><td>font-size</td><td>文字サイズ</td><td>font-size: 16px;</td></tr>
+        <tr><td>background-color</td><td>背景色</td><td>background-color: #eee;</td></tr>
         <tr><td>margin / padding</td><td>余白</td><td>margin: 20px;</td></tr>
         <tr><td>border</td><td>枠線</td><td>border: 1px solid black;</td></tr>
         <tr><td>display</td><td>表示形式</td><td>display: flex;</td></tr>
-        <tr><td>text-align</td><td>文字配置</td><td>text-align: center;</td></tr>
-        <tr><td>width / height</td><td>幅・高さ</td><td>width: 100px;</td></tr>
       </tbody>
     </table>
   </section>
