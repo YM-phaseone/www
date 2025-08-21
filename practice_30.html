@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docment</title>
+    <style>
+        .custom-list {
+            list-style: none;
+        }
+        
+        .custom-list li::before {
+            content: '■';
+            color: #ff9966;
+            margin-right: 10px;
+        }
+        .card {
+            width: 180px;
+            border: 2px solid #4a90e2;
+            margin: 8px;
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            line-height: 60px;
+        }
+        
+        .card::before {
+            content: "★";
+            position: absolute;
+            left: 0;
+            width: 30px;
+            height: 30px;
+            background: #4a90e2;
+            color: white;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="custom-list">
+        <li>リスト1</li>
+        <li>リスト2</li>
+        <li>リスト3</li>
+    </ul>
+
+    <div class="card">早川　雄基</div>
+    <div class="card">並木　栄利乃</div>
+    <div class="card">山田　太郎</div>
+</body>
